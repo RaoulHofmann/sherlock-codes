@@ -15,8 +15,20 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/scripts',
     '@nuxt/image',
-    'shadcn-nuxt'
+    'shadcn-nuxt',
+    '@nuxt/icon'
   ],
+  components: {
+    dirs: ['~/components']
+  },
+  content: {
+    renderer: {
+      anchorLinks: {
+        h3: false,
+        h4: false
+      }
+    }
+  },
   shadcn: {
     /**
      * Prefix for all the imported component

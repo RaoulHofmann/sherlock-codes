@@ -76,6 +76,21 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
+  --eggshell: hsla(46, 74%, 92%, 1);
+  --tea-green: hsla(88, 25%, 78%, 1);
+  --verdigris: hsla(176, 31%, 55%, 1);
+  --viridian: hsla(138, 25%, 39%, 1);
+  --bone: hsla(48, 27%, 82%, 1);
+  --celadon: hsla(128, 26%, 71%, 1);
+  --cambridge-blue: hsla(153, 25%, 61%, 1);
+  --cambridge-blue-2: hsla(168, 23%, 52%, 1);
+  --air-force-blue: hsla(194, 28%, 44%, 1);
+
+  --yinmn-blue: hsla(229, 28%, 43%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --sunset: hsla(34, 91%, 75%, 1);
+  --sandy-brown: hsla(32, 96%, 67%, 1);
+  --pumpkin: hsla(23, 100%, 63%, 1);
 }
 
 .dark {
@@ -119,5 +134,33 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  ul {
+    list-style: disc;
+  }
+
+  /* Header defaults */
+  h1 {
+    @apply text-4xl font-bold tracking-tight text-foreground mb-6;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold tracking-tight text-foreground mb-4 mt-8;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold tracking-tight text-foreground mb-3 mt-6;
+  }
+
+  h4 {
+    @apply text-xl font-medium tracking-tight text-foreground mb-2 mt-4;
+  }
+
+  h5 {
+    @apply text-lg font-medium tracking-tight text-foreground mb-2 mt-3;
+  }
+
+  h6 {
+    @apply text-base font-medium tracking-tight text-foreground mb-2 mt-2;
   }
 }
