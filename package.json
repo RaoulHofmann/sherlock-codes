@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "generate:ssg": "npx nuxi generate --preset github_pages",
+    "generate:ssg": "NUXT_APP_BASE_URL=/code-cleanup-buddy/ npx nuxi generate --preset github_pages",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
