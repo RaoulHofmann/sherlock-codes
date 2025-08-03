@@ -1,4 +1,4 @@
-::background-triangle{height="400px" size="md"}
+::organic-blobs{height="80%"}
 ::
 
 ::hero{class="pb-0"}
@@ -78,10 +78,28 @@ I prepare your codebase for smoothtransitions between developers, ensuring knowl
 I identify and fix technical debt, improving performance and reducing long-term maintenance costs.
 ::
 ::::
+#footer
+:::container{class="max-w-4xl mx-auto py-12"}
+## See the Transformation
 
+:::div{class="flex items-center justify-center gap-8 flex-wrap"}
+::::div{class="text-center"}
+**Turn This:**
+::img{src="img/reverted-again.png" class="max-w-sm mx-auto rounded-lg shadow-lg"}
 ::
+::::
 
-::background-triangle{height="600px" corner="top-right" gradientFrom="var(--white)" gradientTo="var(--pumpkin)" size="md"}
+::::div{class="flex items-center justify-center text-4xl"}
+→
+::::
+
+::::div{class="text-center"}
+**Into This:**
+::img{src="img/reverted-again.png" class="max-w-sm mx-auto rounded-lg shadow-lg"}
+::
+::::
+:::
+:::
 ::
 
 :::container{class="space-y-8 mb-3 flex justify-center flex-col"}
@@ -89,34 +107,44 @@ I identify and fix technical debt, improving performance and reducing long-term 
 
 ### Experience That Matters
 
-With over 10 years of experience in software development, I specialize in cleaning up and optimizing code across multiple technologies:
+With over 10 years of experience in software development, I've worked across diverse industries including telecommunications, fintech, and state and local government projects. Having collaborated with numerous coding contractors, I understand the frustration when projects go over budget, miss deadlines, and leave you with unmaintainable code.
 
-- **PHP**: Refactoring legacy applications and implementing modern PHP practices
-- **Vue.js**: Creating clean, component-based frontend architectures
-- **Next.js**: Building performant and maintainable React applications
-- **Java Spring**: Restructuring enterprise applications for better maintainability
-- **JavaScript**: Transforming spaghetti code into organized, testable modules
+My expertise spans a wide variety of languages and frameworks:
+
+- **PHP** - Backend development and legacy system modernization
+- **Vue.js** - Dynamic frontend applications and user interfaces
+- **Next.js** - Full-stack React applications with server-side rendering
+- **Java Spring** - Enterprise-level backend systems and APIs
+\
+\
+I also bring extensive AWS infrastructure management experience, including Infrastructure as Code using the CDK for deployment and ongoing infrastructure maintenance.
 
 ### Communication is Key
 
-What sets me apart is my ability to communicate technical issues with non-technical stakeholders. I bridge the gap between complex technical concepts and business needs, ensuring everyone understands:
-
-- The problems in the current codebase
-- The solutions being implemented
-- The business value of clean code
-- The long-term benefits of proper code maintenance
-
-I translate technical jargon into clear business language, helping you make informed decisions about your software assets.
+What truly sets me apart is my ability to translate complex technical concepts into clear business language. I excel at bridging the gap between development teams and stakeholders, ensuring everyone understands:
+::br
+::
+- **Current State** - What's broken in your existing codebase and why
+- **Proposed Solutions** - How we'll fix the issues and prevent future problems
+- **Business Impact** - The real-world value of clean, maintainable code
+- **Long-term Strategy** - How proper code maintenance protects your investment
+\
+\
+I believe that great code is only valuable when the business understands its impact. That's why I make technical communication a priority in every project.
 
 :::
 
-
-:::container{class="max-w-2xl mx-auto pt-6 flex justify-center flex-col"}
-## Contact Me
-
-Ready to transform your messy codebase into clean, maintainable code? Let's talk about how I can help your business.
-
-::contact-form
+::mountain-silhouettes{height="50vh" class="opacity-50"}
 ::
 
+:::container{class="max-w-2xl mx-auto pt-6 flex justify-center flex-col"}
+## Ready to Get Started?
+
+Transform your messy codebase into clean, maintainable software that drives business value. Let's discuss how I can help your organization succeed.
+
+**Get in Touch:**
+- **Email**: info@code-cleanup-buddy.com.au
+- **Phone**: 0487 148 442
+
+I'm here to help turn your code challenges into competitive advantages.
 :::

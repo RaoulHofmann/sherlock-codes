@@ -34,12 +34,12 @@ const toggleMobileMenu = () => {
 </script>
 
 <template>
-  <header :class="headerClasses">
+  <header :class="headerClasses" >
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo/Brand -->
         <div class="flex-shrink-0">
-          <NuxtLink to="/" class="flex items-center space-x-2">
+          <NuxtLink to="/public" class="flex items-center space-x-2">
             <span class="text-xl font-bold text-foreground">Code Cleanup Buddy</span>
           </NuxtLink>
         </div>
@@ -94,7 +94,7 @@ const toggleMobileMenu = () => {
           leave-from-class="opacity-100 translate-y-0"
           leave-to-class="opacity-0 -translate-y-2"
       >
-        <div v-if="mobileMenuOpen" class="md:hidden border-t border-border mt-2 pt-2">
+        <div v-if="mobileMenuOpen" class="md:hidden mt-2 pt-2">
           <nav class="flex flex-col space-y-4 pb-4">
 <!--            <NuxtLink-->
 <!--                to="#services"-->

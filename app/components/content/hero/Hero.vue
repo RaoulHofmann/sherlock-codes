@@ -14,7 +14,7 @@ defineProps<{
           <h1 v-if="title" class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             {{ title }}
           </h1>
-          <p v-if="description" class="mx-auto max-w-[700px] text-gray-600 md:text-xl dark:text-gray-400">
+          <p v-if="description" class="mx-auto max-w-[800px] text-gray-600 md:text-xl dark:text-gray-400">
             {{ description }}
           </p>
         </div>
