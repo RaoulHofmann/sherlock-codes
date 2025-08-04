@@ -38,7 +38,7 @@ When your code is more twisted than it needs to be, I apply systematic analysis 
 **The "Future-Proof" Method**
 :::
 ::card-content
-I refactor with foresight and best practices, preventing future maintenance headaches before they happen.
+I refactor with a focus on preventing future maintenance headaches before they happen.
 ::
 ::::
 
@@ -47,7 +47,7 @@ I refactor with foresight and best practices, preventing future maintenance head
 **The "Elementary Solution" Service**
 :::
 ::card-content
-Complex debugging problems become manageable once I apply proven methodologies. Confusing code transforms into clear, readable solutions.
+Complex debugging problems become manageable. Confusing code transforms into clear, readable solutions.
 ::
 ::::
 
@@ -65,7 +65,7 @@ No more missing documentation mysteries! I ensure smooth transitions so your nex
 **The Technical Debt Detective**
 :::
 ::card-content
-I hunt down technical debt systematically - identifying performance bottlenecks and reducing long-term maintenance costs.
+I hunt down technical debt systematically, identifying bottlenecks and reducing long-term maintenance costs.
 ::
 ::::
 ::
@@ -74,6 +74,15 @@ I hunt down technical debt systematically - identifying performance bottlenecks 
 ## The Detective Behind the Deduction
 
 ### A Consulting Detective's Experience
+:::div{class="flex"}
+::figure{class="text-center" style="align-content: center; margin-right: 2rem; width: 400px;"}
+::img{src="img/me.png" width="200" height="200" class="rounded-full"}
+::
+::figcaption{class="caption"}
+[LinkedIn](https://www.linkedin.com/in/raoul-hofmann-547158127/){target="_blank" style="text-decoration: underline;"}
+::
+::
+::div
 Located in Perth Western Australia with over 10 years in the field of software development, I've solved cases across diverse industries including telecommunications, fintech, and state and local government projects. Having worked alongside numerous coding contractors, I've witnessed the aftermath when projects go astray - budget overruns, missed deadlines, and code so mysterious it would baffle even the most experienced developers.
 
 My investigative toolkit includes mastery of multiple programming languages and frameworks:
@@ -86,7 +95,8 @@ My investigative toolkit includes mastery of multiple programming languages and 
 - **Java Spring** - Enterprise-level systems that run smoothly and reliably
 
 I also possess extensive AWS infrastructure expertise, including Infrastructure as Code using the CDK - because even the finest detective needs reliable tools in the cloud.
-
+::
+:::
 ### The Art of Technical Translation
 
 What truly distinguishes my practice is the ability to translate complex technical mysteries into clear business language. I excel at bridging the gap between development teams and stakeholders, ensuring everyone understands:
@@ -95,20 +105,16 @@ What truly distinguishes my practice is the ability to translate complex technic
 - **The Deduction** - How we'll solve the mystery and prevent future coding crimes
 - **The Impact** - Why clean, maintainable code is more valuable than quick fixes
 - **The Long Game** - How proper code maintenance protects your investment over time
-
-"When you have eliminated the impossible, whatever remains, however improbable, must be the truth." That's why I make technical communication as clear as my deductions - because brilliant code is only valuable when everyone can appreciate the solution.
 :::
 
-:::container{class="max-w-2xl mx-auto pt-6 pb-6 flex justify-center flex-col"}
+:::container{class="max-w-2xl mx-auto pt-6 pb-6 flex justify-center flex-col" id="contact-me"}
 ## The Case Begins Here
 
 Ready to solve the mystery of your messy codebase? Transform your digital crime scene into clean, maintainable software that drives business value. The game is afoot, and your success is my mission.
 
-**Send a Message to Baker Street:**
+**Send me a message:**
 - **Email**: info@sherlock-codes.dev
 - **Telegraph**: 0487 148 442
-
-Elementary, my dear client - I'm here to turn your coding mysteries into competitive advantages.
 :::
 
 ::footer{class="w-full h-50"}

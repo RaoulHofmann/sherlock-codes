@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
+  site: {
+    url: 'https://sherlock-codes.dev',
+    name: 'The Case of the Messy Codebase: SOLVED'
+  },
   gtag: {
     tags: [
       'GTM-57FXD4GT',
@@ -22,7 +26,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'shadcn-nuxt',
     '@nuxt/icon',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    '@nuxtjs/sitemap'
   ],
   components: {
     dirs: ['~/components']
