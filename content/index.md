@@ -74,8 +74,7 @@ I hunt down technical debt systematically - identifying performance bottlenecks 
 ## The Detective Behind the Deduction
 
 ### A Consulting Detective's Experience
-
-With over 10 years in the field of software development, I've solved cases across diverse industries including telecommunications, fintech, and state and local government projects. Having worked alongside numerous coding contractors, I've witnessed the aftermath when projects go astray - budget overruns, missed deadlines, and code so mysterious it would baffle even the most experienced developers.
+Located in Perth Western Australia with over 10 years in the field of software development, I've solved cases across diverse industries including telecommunications, fintech, and state and local government projects. Having worked alongside numerous coding contractors, I've witnessed the aftermath when projects go astray - budget overruns, missed deadlines, and code so mysterious it would baffle even the most experienced developers.
 
 My investigative toolkit includes mastery of multiple programming languages and frameworks:
 

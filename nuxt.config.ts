@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
+  gtag: {
+    id: 'GTM-57FXD4GT'
+  },
   vite: {
     plugins: [tailwindcss()],
   },
@@ -15,7 +18,8 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/image',
     'shadcn-nuxt',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    'nuxt-gtag'
   ],
   components: {
     dirs: ['~/components']
