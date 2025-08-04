@@ -37,7 +37,6 @@ const toggleMobileMenu = () => {
   <header :class="headerClasses" >
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <!-- Logo/Brand -->
         <div class="flex-shrink-0">
           <NuxtLink to="/public" class="flex items-center space-x-2">
             <span class="text-xl font-bold text-foreground">Code Cleanup Buddy</span>
@@ -60,17 +59,15 @@ const toggleMobileMenu = () => {
 <!--          </NuxtLink>-->
 <!--        </nav>-->
 
-        <!-- CTA Button -->
         <div class="hidden md:flex items-center space-x-4">
           <NuxtLink
-              to="#contact-me"
+              to="/public#contact-me"
               class="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors duration-200"
           >
             Get Started
           </NuxtLink>
         </div>
 
-        <!-- Mobile menu button -->
         <div class="md:hidden">
           <button
               class="text-foreground hover:text-primary transition-colors duration-200"
@@ -78,7 +75,7 @@ const toggleMobileMenu = () => {
               @click="toggleMobileMenu"
           >
             <Icon
-                :name="mobileMenuOpen ? 'carbon:close' : 'carbon:menu'"
+                :name="mobileMenuOpen ? 'material-symbols:cancel' : 'material-symbols:menu-rounded'"
                 class="h-6 w-6"
             />
           </button>
@@ -111,7 +108,7 @@ const toggleMobileMenu = () => {
 <!--              About-->
 <!--            </NuxtLink>-->
             <NuxtLink
-                to="#contact-me"
+                to="/public#contact-me"
                 class="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors duration-200 text-center"
                 @click="mobileMenuOpen = false"
             >

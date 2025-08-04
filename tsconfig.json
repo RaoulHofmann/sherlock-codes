@@ -2,10 +2,12 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "files": [],
   "compilerOptions": {
+    "types": ["@nuxt/types", "@types/node"],
     "paths": {
       "@/*": ["./app/*"]
     }
   },
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"],
   "references": [
     {
       "path": "./.nuxt/tsconfig.app.json"
