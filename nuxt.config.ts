@@ -7,7 +7,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
   gtag: {
-    id: 'GTM-57FXD4GT'
+    tags: [
+      'GTM-57FXD4GT',
+      'G-ZT6HS7Z85T'
+    ]
   },
   vite: {
     plugins: [tailwindcss()],
