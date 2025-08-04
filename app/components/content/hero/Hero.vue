@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <section :class="['pt-6 md:pt-12 lg:pt-24 flex justify-center', className]">
+  <section :class="['pt-16 md:pt-24 lg:pt-32 flex justify-center', className]">
     <div class="container px-4 md:px-6">
       <div class="flex flex-col items-center space-y-4 text-center">
         <div class="space-y-2">

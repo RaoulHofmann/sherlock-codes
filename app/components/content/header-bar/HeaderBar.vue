@@ -25,7 +25,6 @@ const headerClasses = computed(() => {
   return classes
 })
 
-// Mobile menu toggle
 const mobileMenuOpen = ref(false)
 
 const toggleMobileMenu = () => {
@@ -35,11 +34,11 @@ const toggleMobileMenu = () => {
 
 <template>
   <header :class="headerClasses" >
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full">
       <div class="flex items-center justify-between h-16">
         <div class="flex-shrink-0">
           <NuxtLink to="/public" class="flex items-center space-x-2">
-            <span class="text-xl font-bold text-foreground">Code Cleanup Buddy</span>
+            <span class="text-xl font-bold text-secondary">Sherlock Codes</span>
           </NuxtLink>
         </div>
 
@@ -61,8 +60,8 @@ const toggleMobileMenu = () => {
 
         <div class="hidden md:flex items-center space-x-4">
           <NuxtLink
-              to="/public#contact-me"
-              class="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors duration-200"
+              :to="{ hash: '#contact-me' }"
+              class="px-4 py-2 rounded-md font-medium detective-cta hover:detective-cta:hover"
           >
             Get Started
           </NuxtLink>
@@ -82,7 +81,6 @@ const toggleMobileMenu = () => {
         </div>
       </div>
 
-      <!-- Mobile Navigation -->
       <Transition
           enter-active-class="transition-all duration-300 ease-out"
           enter-from-class="opacity-0 -translate-y-2"
@@ -108,7 +106,7 @@ const toggleMobileMenu = () => {
 <!--              About-->
 <!--            </NuxtLink>-->
             <NuxtLink
-                to="/public#contact-me"
+                :to="{ hash: '#contact-me' }"
                 class="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors duration-200 text-center"
                 @click="mobileMenuOpen = false"
             >

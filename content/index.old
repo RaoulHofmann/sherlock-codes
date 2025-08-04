@@ -1,8 +1,3 @@
---- 
-title: "Sherlock Codes: Solving Messy Codebases with Precision"
-description: "Discover how Sherlock Codes applies investigative techniques to untangle messy codebases, reduce technical debt, and improve maintainability across PHP, NextJs, Vue, and more."
----
-
 ::hero{class="pb-0"}
 ---
 title: "The Case of the Messy Codebase: SOLVED"
@@ -16,58 +11,112 @@ title: "My Methods of Deduction"
 ---
 
 ::::card{class="flex justify-center text-center magnifying-glass-border"}
-:::card-title{class="max-w-50 flex items-center justify-center gap-3 mb-3 card-title"}
+:::div{class="flex items-center justify-center gap-3 mb-3"}
+::icon{name="material-symbols:person-search"}
+::
 **The "What Does This Do?" Investigation**
 :::
-::card-content
+::p
 I decode mysterious code blocks and add clear documentation so everyone understands what's happening under the hood.
 ::
 ::::
 
 ::::card{class="flex justify-center text-center magnifying-glass-border"}
-:::card-title{class="flex items-center justify-center gap-3 mb-3 text-wrap card-title"}
+:::div{class="flex items-center justify-center gap-3 mb-3"}
+::icon{name="material-symbols:lightbulb-rounded"}
+::
 **The Case of the Tangled Logic**
 :::
-::card-content
+::p
 When your code is more twisted than it needs to be, I apply systematic analysis to untangle the mess and restore order.
 ::
 ::::
 
 ::::card{class="flex justify-center text-center magnifying-glass-border"}
-:::card-title{class="flex items-center justify-center gap-3 mb-3 card-title"}
+:::div{class="flex items-center justify-center gap-3 mb-3"}
+::icon{name="material-symbols:thumb-up-sharp"}
+::
 **The "Future-Proof" Method**
 :::
-::card-content
+::p
 I refactor with foresight and best practices, preventing future maintenance headaches before they happen.
 ::
 ::::
 
 ::::card{class="flex justify-center text-center magnifying-glass-border"}
-:::card-title{class="flex items-center justify-center gap-3 mb-3 card-title"}
+:::div{class="flex items-center justify-center gap-3 mb-3"}
+::icon{name="material-symbols:check-rounded" class="mr-4"}
+::
 **The "Elementary Solution" Service**
 :::
-::card-content
+::p
 Complex debugging problems become manageable once I apply proven methodologies. Confusing code transforms into clear, readable solutions.
 ::
 ::::
 
 ::::card{class="flex justify-center text-center magnifying-glass-border"}
-:::card-title{class="flex items-center justify-center gap-3 mb-3 card-title"}
+:::div{class="flex items-center justify-center gap-3 mb-3"}
+::icon{name="material-symbols:question-mark"}
+::
 **The Great Developer Handoff**
 :::
-::card-content
+::p
 No more missing documentation mysteries! I ensure smooth transitions so your next developer can hit the ground running.
 ::
 ::::
 
 ::::card{class="flex justify-center text-center magnifying-glass-border"}
-:::card-title{class="flex items-center justify-center gap-3 mb-3 card-title"}
+:::div{class="flex items-center justify-center gap-3 mb-3"}
+::icon{name="material-symbols:code-blocks-rounded"}
+::
 **The Technical Debt Detective**
 :::
-::card-content
+::p
 I hunt down technical debt systematically - identifying performance bottlenecks and reducing long-term maintenance costs.
 ::
 ::::
+#footer
+## The Great Code Transformation
+
+:::div{class="flex items-center justify-center"}
+::::div
+**The Scene of the Crime:**
+```php
+function deleteUser($id) {
+    global $db;
+
+    $query = "DELETE FROM users WHERE id = $id";
+    mysql_query($query);
+
+    echo "User $id deleted";
+}
+
+$userId = $_GET['delete'];
+deleteUser($userId);
+```
+::::
+
+::::div{class="flex items-center justify-center text-4xl"}
+🔍→✨
+::::
+
+::::div
+**Case Closed:**
+```php
+function deleteUser($pdo, $id) {
+    if (!is_numeric($id) || $id <= 0) {
+        return false;
+    }
+
+    $stmt = $pdo->prepare("DELETE FROM users WHERE id = ?");
+    return $stmt->execute([$id]);
+}
+
+$userId = filter_input(INPUT_POST, 'user_id', FILTER_VALIDATE_INT);
+if ($userId && deleteUser($pdo, $userId)) {
+```
+::::
+:::
 ::
 
 :::container{class="space-y-8 mb-3 flex justify-center flex-col"}
@@ -106,7 +155,7 @@ What truly distinguishes my practice is the ability to translate complex technic
 Ready to solve the mystery of your messy codebase? Transform your digital crime scene into clean, maintainable software that drives business value. The game is afoot, and your success is my mission.
 
 **Send a Message to Baker Street:**
-- **Email**: info@sherlock-codes.dev
+- **Email**: info@sherlock-codes.com.au
 - **Telegraph**: 0487 148 442
 
 Elementary, my dear client - I'm here to turn your coding mysteries into competitive advantages.

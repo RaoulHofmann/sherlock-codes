@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@tailwind utilities;
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,97 +46,98 @@
 }
 
 :root {
-  --background: var(--white);
-  --foreground: var(--black-olive);
-  --card: #F5F5F5;
-  --card-foreground: var(--black-olive);
-  --popover: var(--white);
-  --popover-foreground: var(--black-olive);
-  --primary: var(--viridian);
-  --primary-foreground: var(--white);
-  --secondary: var(--tea-green);
-  --secondary-foreground: var(--viridian);
-  --muted: var(--tea-green);
-  --muted-foreground: var(--viridian);
-  --accent: var(--verdigris);
-  --accent-foreground: var(--white);
-  --destructive: var(--tomato);
-  --destructive-foreground: var(--white);
-  --border: var(--tea-green);
-  --input: var(--white);
-  --ring: var(--verdigris);
-  --chart-1: var(--viridian);
-  --chart-2: var(--verdigris);
-  --chart-3: var(--tea-green);
-  --chart-4: var(--celadon);
-  --chart-5: var(--cambridge-blue);
+  --background: var(--parchment);
+  --foreground: var(--navy-deep);
+  --card: var(--cream-light);
+  --card-foreground: var(--navy-deep);
+  --popover: var(--parchment);
+  --popover-foreground: var(--navy-deep);
+  --primary: var(--navy-deep);
+  --primary-foreground: var(--parchment);
+  --secondary: var(--amber-warm);
+  --secondary-foreground: var(--navy-deep);
+  --muted: var(--cream-muted);
+  --muted-foreground: var(--navy-medium);
+  --accent: var(--copper-rich);
+  --accent-foreground: var(--parchment);
+  --destructive: var(--crimson);
+  --destructive-foreground: var(--parchment);
+  --border: var(--cream-border);
+  --input: var(--parchment);
+  --ring: var(--amber-warm);
+  --chart-1: var(--navy-deep);
+  --chart-2: var(--amber-warm);
+  --chart-3: var(--copper-rich);
+  --chart-4: var(--navy-medium);
+  --chart-5: var(--amber-light);
   --radius: 0.625rem;
-  --sidebar: var(--white);
-  --sidebar-foreground: var(--black-olive);
-  --sidebar-primary: var(--viridian);
-  --sidebar-primary-foreground: var(--white);
-  --sidebar-accent: var(--tea-green);
-  --sidebar-accent-foreground: var(--viridian);
-  --sidebar-border: var(--tea-green);
-  --sidebar-ring: var(--verdigris);
+  --sidebar: var(--cream-light);
+  --sidebar-foreground: var(--navy-deep);
+  --sidebar-primary: var(--navy-deep);
+  --sidebar-primary-foreground: var(--parchment);
+  --sidebar-accent: var(--amber-light);
+  --sidebar-accent-foreground: var(--navy-deep);
+  --sidebar-border: var(--cream-border);
+  --sidebar-ring: var(--amber-warm);
 
-  /* Nature Harmony Palette */
-  --eggshell: hsla(46, 74%, 92%, 1);
-  --tea-green: hsla(88, 25%, 78%, 1);
-  --verdigris: hsla(176, 31%, 55%, 1);
-  --viridian: hsla(138, 25%, 39%, 1);
-  --white: hsla(0, 0%, 100%, 1);
-  --black-olive: hsla(72, 10%, 20%, 1);
+  /* Victorian Detective Palette */
+  --navy-deep: hsla(220, 39%, 15%, 1);        /* Deep navy blue - primary */
+  --navy-medium: hsla(220, 25%, 25%, 1);      /* Medium navy */
+  --navy-light: hsla(220, 15%, 35%, 1);       /* Light navy */
+  --amber-warm: hsla(38, 90%, 55%, 1);        /* Warm amber/gold - secondary */
+  --amber-light: hsla(42, 85%, 65%, 1);       /* Light amber */
+  --amber-dark: hsla(35, 95%, 45%, 1);        /* Dark amber */
+  --copper-rich: hsla(25, 85%, 40%, 1);       /* Rich copper - accent */
+  --copper-light: hsla(30, 75%, 50%, 1);      /* Light copper */
+  --parchment: hsla(45, 40%, 96%, 1);         /* Warm white/cream background */
+  --cream-light: hsla(45, 30%, 92%, 1);       /* Light cream for cards */
+  --cream-muted: hsla(45, 20%, 88%, 1);       /* Muted cream */
+  --cream-border: hsla(45, 25%, 85%, 1);      /* Border cream */
+  --charcoal: hsla(220, 15%, 15%, 1);         /* Deep charcoal */
+  --crimson: hsla(355, 75%, 50%, 1);          /* Error red */
 
-  /* Additional colors for accent use */
-  --bone: hsla(48, 27%, 82%, 1);
-  --celadon: hsla(128, 26%, 71%, 1);
-  --cambridge-blue: hsla(153, 25%, 61%, 1);
-  --cambridge-blue-2: hsla(168, 23%, 52%, 1);
-  --air-force-blue: hsla(194, 28%, 44%, 1);
-  --yinmn-blue: hsla(229, 28%, 43%, 1);
-  --sunset: hsla(34, 91%, 75%, 1);
-  --sandy-brown: hsla(32, 96%, 67%, 1);
-  --pumpkin: hsla(23, 100%, 63%, 1);
-  --tomato: hsla(10, 85%, 61%, 1);
-  --isabelline: hsla(18, 22%, 91%, 1);
-  --platinum: hsla(60, 1%, 85%, 1);
-  --vivid-sky-blue: hsla(197, 78%, 64%, 1);
+  /* Additional Victorian colors for variety */
+  --burgundy: hsla(345, 65%, 25%, 1);         /* Deep burgundy */
+  --brass: hsla(48, 85%, 45%, 1);             /* Brass accent */
+  --leather-brown: hsla(25, 45%, 25%, 1);     /* Rich brown leather */
+  --gaslight: hsla(42, 95%, 75%, 1);          /* Soft gaslight glow */
+  --fog-gray: hsla(210, 10%, 75%, 1);         /* London fog gray */
+  --emerald-dark: hsla(155, 45%, 25%, 1);     /* Dark emerald */
 }
 
 .dark {
-  --background: var(--black-olive);
-  --foreground: var(--eggshell);
-  --card: hsla(72, 10%, 15%, 1);
-  --card-foreground: var(--eggshell);
-  --popover: hsla(72, 10%, 15%, 1);
-  --popover-foreground: var(--eggshell);
-  --primary: var(--tea-green);
-  --primary-foreground: var(--black-olive);
-  --secondary: hsla(138, 25%, 25%, 1);
-  --secondary-foreground: var(--tea-green);
-  --muted: hsla(138, 25%, 25%, 1);
-  --muted-foreground: var(--verdigris);
-  --accent: var(--verdigris);
-  --accent-foreground: var(--black-olive);
-  --destructive: var(--tomato);
-  --destructive-foreground: var(--white);
-  --border: hsla(138, 25%, 25%, 1);
-  --input: hsla(72, 10%, 15%, 1);
-  --ring: var(--tea-green);
-  --chart-1: var(--tea-green);
-  --chart-2: var(--verdigris);
-  --chart-3: var(--celadon);
-  --chart-4: var(--cambridge-blue);
-  --chart-5: var(--vivid-sky-blue);
-  --sidebar: hsla(72, 10%, 15%, 1);
-  --sidebar-foreground: var(--eggshell);
-  --sidebar-primary: var(--tea-green);
-  --sidebar-primary-foreground: var(--black-olive);
-  --sidebar-accent: hsla(138, 25%, 25%, 1);
-  --sidebar-accent-foreground: var(--tea-green);
-  --sidebar-border: hsla(138, 25%, 25%, 1);
-  --sidebar-ring: var(--tea-green);
+  --background: var(--navy-deep);
+  --foreground: var(--parchment);
+  --card: hsla(220, 39%, 10%, 1);
+  --card-foreground: var(--parchment);
+  --popover: hsla(220, 39%, 10%, 1);
+  --popover-foreground: var(--parchment);
+  --primary: var(--amber-warm);
+  --primary-foreground: var(--navy-deep);
+  --secondary: var(--navy-medium);
+  --secondary-foreground: var(--amber-light);
+  --muted: var(--navy-medium);
+  --muted-foreground: var(--amber-light);
+  --accent: var(--copper-rich);
+  --accent-foreground: var(--parchment);
+  --destructive: var(--crimson);
+  --destructive-foreground: var(--parchment);
+  --border: var(--navy-medium);
+  --input: hsla(220, 39%, 8%, 1);
+  --ring: var(--amber-warm);
+  --chart-1: var(--amber-warm);
+  --chart-2: var(--copper-rich);
+  --chart-3: var(--amber-light);
+  --chart-4: var(--copper-light);
+  --chart-5: var(--gaslight);
+  --sidebar: hsla(220, 39%, 8%, 1);
+  --sidebar-foreground: var(--parchment);
+  --sidebar-primary: var(--amber-warm);
+  --sidebar-primary-foreground: var(--navy-deep);
+  --sidebar-accent: var(--navy-medium);
+  --sidebar-accent-foreground: var(--amber-light);
+  --sidebar-border: var(--navy-medium);
+  --sidebar-ring: var(--amber-warm);
 }
 
 @layer base {
@@ -142,28 +146,43 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Add subtle texture for Victorian feel */
+    background-image: radial-gradient(circle at 1px 1px, rgba(220, 205, 180, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
   }
   ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     list-style: disc;
+    list-style-position: inside;
   }
   header {
-    background: var(--tea-green) !important;
-    border-bottom: 0 !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    background: linear-gradient(135deg, var(--navy-deep), var(--navy-medium));
+    border-bottom: 1px solid var(--copper-rich);
+    box-shadow: 0 4px 12px rgba(38, 50, 80, 0.15) !important;
     position: fixed;
   }
-
-  /* Header defaults */
+  footer {
+    background: linear-gradient(135deg, var(--navy-deep), var(--navy-medium));
+    border-top: 1px solid var(--copper-rich);
+    box-shadow: 0 4px 12px rgba(38, 50, 80, 0.15) !important;
+    height: 3rem;
+    margin-top: 4rem;
+  }
   h1 {
+    padding-top: 2rem;
     @apply text-4xl font-bold tracking-tight text-foreground mb-6;
+    font-family: 'Georgia', 'Times New Roman', serif;
   }
 
   h2 {
     @apply text-3xl font-semibold tracking-tight text-foreground mb-4 mt-8;
+    font-family: 'Georgia', 'Times New Roman', serif;
   }
 
   h3 {
     @apply text-2xl font-semibold tracking-tight text-foreground mb-3 mt-6;
+    font-family: 'Georgia', 'Times New Roman', serif;
   }
 
   h4 {
@@ -176,5 +195,60 @@
 
   h6 {
     @apply text-base font-medium tracking-tight text-foreground mb-2 mt-2;
+  }
+
+  /* Victorian-inspired accents */
+  .detective-accent {
+    background: linear-gradient(135deg, var(--amber-warm), var(--copper-rich));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gaslight-glow {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  }
+
+  .magnifying-glass-border {
+    border: 3px solid var(--copper-rich);
+    border-radius: 50%;
+  }
+
+  /* Code blocks with detective theme */
+  pre, code {
+    background: var(--cream-light);
+  }
+
+  /* Buttons with Victorian style */
+  .btn-detective {
+    background: linear-gradient(145deg, var(--navy-deep), var(--navy-medium));
+    color: var(--amber-warm);
+    border: 2px solid var(--copper-rich);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .btn-detective:hover {
+    background: linear-gradient(145deg, var(--amber-warm), var(--amber-dark));
+    color: var(--navy-deep);
+    border-color: var(--navy-deep);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  }
+
+  .detective-brand {
+    color: var(--amber-warm);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .detective-cta {
+    background: linear-gradient(145deg, var(--amber-warm), var(--amber-dark));
+    color: var(--navy-deep);
+    border: 1px solid var(--copper-rich);
+  }
+
+  .detective-cta:hover {
+    background: linear-gradient(145deg, var(--copper-rich), var(--copper-light));
+    color: var(--parchment);
+    border-color: var(--amber-warm);
   }
 }

@@ -7,9 +7,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
   modules: [
     '@nuxt/content',
@@ -23,6 +21,14 @@ export default defineNuxtConfig({
     dirs: ['~/components']
   },
   content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'github-light-default',
+          langs: ['php']
+        }
+      }
+    },
     renderer: {
       anchorLinks: {
         h3: false,
@@ -39,6 +45,6 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './components/ui'
+    componentDir: '~/components/ui'
   }
 })
