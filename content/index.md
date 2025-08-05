@@ -74,15 +74,13 @@ I hunt down technical debt systematically, identifying bottlenecks and reducing 
 ## The Detective Behind the Deduction
 
 ### A Consulting Detective's Experience
-:::div{class="flex"}
-::figure{class="text-center" style="align-content: center; margin-right: 2rem; width: 400px;"}
+:::text-image
+#img
 ::img{src="/me.png" width="200" height="200" class="rounded-full"}
 ::
-::figcaption{class="caption"}
-[LinkedIn](https://www.linkedin.com/in/raoul-hofmann-547158127/){target="_blank" style="text-decoration: underline;"}
-::
-::
-::div
+#caption
+[LinkedIn](https://www.linkedin.com/in/raoul-hofmann-547158127/){target="_blank"}
+#text
 Located in Perth Western Australia with 10 years in the field of software development, I've solved cases across diverse industries including telecommunications, fintech, and state and local government projects. Having worked alongside numerous coding contractors, I've witnessed the aftermath when projects go astray - budget overruns, missed deadlines, and code so mysterious it would baffle even the most experienced developers.
 
 My investigative toolkit includes mastery of multiple programming languages and frameworks:
@@ -95,7 +93,6 @@ My investigative toolkit includes mastery of multiple programming languages and 
 - **Java Spring** - Enterprise-level systems that run smoothly and reliably
 
 I also possess extensive AWS infrastructure expertise, including Infrastructure as Code using the CDK - because even the finest detective needs reliable tools in the cloud.
-::
 :::
 ### The Art of Technical Translation
 
