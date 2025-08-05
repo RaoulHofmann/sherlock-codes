@@ -76,14 +76,14 @@ I hunt down technical debt systematically, identifying bottlenecks and reducing 
 ### A Consulting Detective's Experience
 :::div{class="flex"}
 ::figure{class="text-center" style="align-content: center; margin-right: 2rem; width: 400px;"}
-::img{src="img/me.png" width="200" height="200" class="rounded-full"}
+::img{src="/me.png" width="200" height="200" class="rounded-full"}
 ::
 ::figcaption{class="caption"}
 [LinkedIn](https://www.linkedin.com/in/raoul-hofmann-547158127/){target="_blank" style="text-decoration: underline;"}
 ::
 ::
 ::div
-Located in Perth Western Australia with over 10 years in the field of software development, I've solved cases across diverse industries including telecommunications, fintech, and state and local government projects. Having worked alongside numerous coding contractors, I've witnessed the aftermath when projects go astray - budget overruns, missed deadlines, and code so mysterious it would baffle even the most experienced developers.
+Located in Perth Western Australia with 10 years in the field of software development, I've solved cases across diverse industries including telecommunications, fintech, and state and local government projects. Having worked alongside numerous coding contractors, I've witnessed the aftermath when projects go astray - budget overruns, missed deadlines, and code so mysterious it would baffle even the most experienced developers.
 
 My investigative toolkit includes mastery of multiple programming languages and frameworks:
 

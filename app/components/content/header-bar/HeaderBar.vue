@@ -37,7 +37,7 @@ const toggleMobileMenu = () => {
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full">
       <div class="flex items-center justify-between h-16">
         <div class="flex-shrink-0">
-          <NuxtLink to="/public" class="flex items-center space-x-2">
+          <NuxtLink to="/" class="flex items-center space-x-2">
             <span class="text-xl font-bold text-secondary">Sherlock Codes</span>
           </NuxtLink>
         </div>
