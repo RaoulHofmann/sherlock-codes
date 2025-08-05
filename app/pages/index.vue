@@ -11,7 +11,7 @@ useHead({
         "@id": "https://sherlock-codes.dev",
         "name": "Sherlock Codes",
         "alternateName": "Sherlock Codes Software Consulting",
-        "description": "Professional software consulting and code cleanup services specializing in PHP, Laravel, Vue.js, Next.js, and Node.js development in Perth, Western Australia.",
+        "description": "Software consulting and code cleanup services specializing in PHP, Laravel, Vue.js, Next.js, and Node.js development in Perth, Western Australia.",
         "url": "https://sherlock-codes.dev",
         "telephone": "0487148442",
         "email": "info@sherlock-codes.dev",
@@ -51,7 +51,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Sherlock Codes",
-        "description": "Expert software consulting services for messy codebases, technical debt reduction, and code refactoring across PHP, Laravel, Vue.js, Next.js, and Node.js technologies.",
+        "description": "Software consulting services for messy codebases, technical debt reduction, and code refactoring across PHP, Laravel, Vue.js, Next.js, and Node.js technologies.",
         "provider": {
           "@type": "Person",
           "name": "Sherlock Codes",
@@ -67,7 +67,7 @@ useHead({
         "serviceOutput": "Clean, maintainable, and well-documented code",
         "offers": {
           "@type": "Offer",
-          "description": "Professional code cleanup and software consulting services"
+          "description": "Code cleanup and software consulting services"
         }
       })
     },
@@ -79,7 +79,7 @@ useHead({
         "name": "Sherlock Codes",
         "alternateName": "Sherlock Codes - Software Consulting",
         "url": "https://sherlock-codes.dev",
-        "description": "Professional software consulting and code cleanup services in Perth, Western Australia",
+        "description": "Software consulting and code cleanup services in Perth, Western Australia",
         "inLanguage": "en-AU",
         "isPartOf": {
           "@type": "WebSite",
@@ -109,11 +109,11 @@ useHead({
 useSeoMeta({
   // Basic Meta Tags
   title: home.value?.title || "Sherlock Codes: Code Detective & Software Consultant | Perth WA",
-  description: home.value?.description || "Professional code cleanup and software consulting in Perth, Western Australia. I solve messy codebases, reduce technical debt, and improve maintainability across PHP, Laravel, Vue.js, Next.js, and Node.js projects.",
+  description: home.value?.description || "Code cleanup and software consulting in Perth, Western Australia. I solve messy codebases, reduce technical debt, and improve maintainability across PHP, Laravel, Vue.js, Next.js, and Node.js projects.",
 
   // Open Graph Tags
-  ogTitle: "Sherlock Codes - Solving Messy Codebases with Precision | Perth WA",
-  ogDescription: "Transform your digital crime scene into clean, maintainable software. Expert code consulting for PHP, Laravel, Vue.js, Next.js & Node.js in Perth, Western Australia.",
+  ogTitle: "Sherlock Codes - Solving Messy Codebases | Perth WA",
+  ogDescription: "Transform your digital crime scene into clean, maintainable software",
   ogType: "website",
   ogUrl: "https://sherlock-codes.dev",
   // ogImage: "https://sherlock-codes.dev/images/sherlock-codes-og-image.jpg",
