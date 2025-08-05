@@ -37,7 +37,7 @@ useHead({
           }
         ],
         "serviceType": ["Software Consulting", "Code Refactoring", "Technical Debt Reduction", "Legacy Code Modernization"],
-        "priceRange": "$$",
+        "priceRange": "$",
         "openingHours": "Mo-Fr 09:00-17:00",
         "sameAs": [
           "https://www.linkedin.com/in/raoul-hofmann-547158127",
@@ -56,6 +56,12 @@ useHead({
           "@type": "Person",
           "name": "Sherlock Codes",
           "jobTitle": "Software Consultant & Code Detective"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Perth",
+          "addressRegion": "WA",
+          "addressCountry": "AU"
         },
         "areaServed": "Perth, Western Australia",
         "serviceOutput": "Clean, maintainable, and well-documented code",
@@ -85,7 +91,15 @@ useHead({
         },
         "mainEntity": {
           "@type": "LocalBusiness",
-          "name": "Sherlock Codes"
+          "name": "Sherlock Codes",
+          "priceRange": "$",
+          "telephone": "0487148442",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Perth",
+            "addressRegion": "WA",
+            "addressCountry": "AU"
+          },
         }
       })
     }
