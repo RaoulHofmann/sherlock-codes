@@ -29,7 +29,8 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxt/icon',
     'nuxt-gtag',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-schema-org'
   ],
   components: {
     dirs: ['~/components']
