@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     'nuxt-gtag',
     '@nuxtjs/sitemap',
-    'nuxt-schema-org'
+    'nuxt-schema-org',
+    '@nuxtjs/robots'
   ],
   components: {
     dirs: ['~/components']
