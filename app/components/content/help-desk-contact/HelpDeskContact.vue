@@ -20,5 +20,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="containerRef" style="display: flex; justify-content: center; padding-top: 1rem; padding-bottom: 1rem; margin-top: 2rem; background: var(--card); border-top: 1px solid var(--copper-rich);"/>
+  <div ref="containerRef" style="display: flex; justify-content: center; padding-bottom: 1rem; margin-top: 2rem; background: var(--card); border-top: 1px solid var(--copper-rich);"/>
 </template>
