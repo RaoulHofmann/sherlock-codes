@@ -86,11 +86,11 @@ Located in Perth Western Australia with 10 years in the field of software develo
 My investigative toolkit includes mastery of multiple programming languages and frameworks:
 
 - **PHP** - Solving legacy system mysteries and backend puzzles
-- **Laravel** - Building elegant, maintainable PHP applications with modern patterns
-- **Node.js** - Server-side JavaScript solutions that scale efficiently
+- **Laravel** - Building elegant, maintainable PHP applications
+- **Node.js** - Server-side JavaScript solutions
 - **Vue.js** - Crafting dynamic frontend solutions
-- **Next.js** - Building full-stack React applications with optimal performance
-- **Java Spring** - Enterprise-level systems that run smoothly and reliably
+- **Next.js** - Building full-stack React applications
+- **Java Spring** - Enterprise-level systems
 
 I also possess extensive AWS infrastructure expertise, including Infrastructure as Code using the CDK - because even the finest detective needs reliable tools in the cloud.
 :::
