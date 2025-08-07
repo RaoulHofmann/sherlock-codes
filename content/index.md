@@ -1,5 +1,5 @@
 --- 
-title: "Sherlock Codes: Solving Messy Codebases with Precision"
+title: "Sherlock Codes: Solving Messy Codebases"
 description: "Discover how Sherlock Codes applies investigative techniques to untangle messy codebases, reduce technical debt, and improve maintainability across PHP, NextJs, Vue, and more."
 ---
 
@@ -88,7 +88,7 @@ My investigative toolkit includes mastery of multiple programming languages and 
 - **PHP** - Solving legacy system mysteries and backend puzzles
 - **Laravel** - Building elegant, maintainable PHP applications with modern patterns
 - **Node.js** - Server-side JavaScript solutions that scale efficiently
-- **Vue.js** - Crafting dynamic frontend solutions with precision
+- **Vue.js** - Crafting dynamic frontend solutions
 - **Next.js** - Building full-stack React applications with optimal performance
 - **Java Spring** - Enterprise-level systems that run smoothly and reliably
 
