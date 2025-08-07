@@ -29,8 +29,6 @@ onMounted(() => {
   justify-content: center;
   padding: 3rem 1rem;
   margin-top: 2rem;
-  background: var(--card);
-  border-top: 1px solid var(--copper-rich);
   position: relative;
 }
 
@@ -142,6 +140,7 @@ onMounted(() => {
   position: relative;
   overflow: hidden;
   margin-top: 1rem;
+  height: 50px;
 }
 
 .youtrack-form-wrapper :deep(button[type="submit"]:hover:not(:disabled)) {
