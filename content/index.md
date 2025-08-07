@@ -104,7 +104,7 @@ What truly distinguishes my practice is the ability to translate complex technic
 - **The Long Game** - How proper code maintenance protects your investment over time
 :::
 
-:::container{class="max-w-2xl mx-auto pt-6 pb-6 flex justify-center flex-col" id="contact-me"}
+:::container{class="space-y-8 mb-3 flex justify-center flex-col" id="contact-me"}
 ## The Case Begins Here
 
 Ready to solve the mystery of your messy codebase? Transform your digital crime scene into clean, maintainable software that drives business value. The game is afoot, and your success is my mission.
