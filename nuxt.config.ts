@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  devtools: {enabled: true},
   css: ['~/assets/css/tailwind.css'],
   site: {
     url: 'https://sherlock-codes.dev',
@@ -17,6 +17,9 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ['react-compiler-runtime', 'react', 'react-dom']
+    }
   },
   image: {
     dir: 'assets/images'
@@ -31,10 +34,16 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     '@nuxtjs/sitemap',
     'nuxt-schema-org',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxtjs/sanity'
   ],
   components: {
     dirs: ['~/components']
+  },
+  sanity: {
+    projectId: "ctarui6k",
+    dataset: "production",
+    visualEditing: false
   },
   content: {
     build: {
