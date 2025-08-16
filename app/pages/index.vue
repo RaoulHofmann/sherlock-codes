@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type {SanityDocument} from "@sanity/client";
-import SanityCustomContent from "@/components/sanity/custom-content/SanityCustomContent.vue";
+import {SanityCustomContent} from "@RaoulHofmann/sherlocks-sanity-library";
 
 //const {data: home} = await useAsyncData(() => queryCollection('content').path('/').first())
 

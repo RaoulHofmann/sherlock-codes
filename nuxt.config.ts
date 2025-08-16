@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sanity'
   ],
   components: {
-    dirs: ['~/components']
+    dirs: ['~/components', 'node_modules/@RaoulHofmann/sherlocks-sanity-library']
   },
   sanity: {
     projectId: "ctarui6k",
