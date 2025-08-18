@@ -12,13 +12,17 @@ const PAGE_QUERY = groq`*[
     slug,
     body[]{
       ...,
-      _type == "reference" => @->
+      _type == "reference" => @->,
+      _type == "image" => {
+        asset->{
+          _id,
+          url
+        }
+      }
     }
   }`;
 
 const {data: page} = await useLazySanityQuery<SanityDocument>(PAGE_QUERY);
-
-console.log(page.value)
 
 useSeoMeta({
   title: page.value?.title || "Sherlock Codes: Code Detective & Software Consultant | Perth WA",
@@ -28,9 +32,11 @@ useSeoMeta({
 
 <template>
   <main style="position: relative">
-    <Hero v-if="page?.title" :title="page.title" :description="page?.subtitle" />
-    <SanityCustomContent v-if="page?.body" :content="page?.body" />
-<!--    <ContentRenderer v-if="home" :value="home" style="position: relative"/>-->
-<!--    <div v-else>Home not found</div>-->
+    <Hero v-if="page?.title" :title="page.title" :description="page?.subtitle"/>
+    <Container class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8 mb-3 flex justify-center flex-col">
+      <SanityCustomContent v-if="page?.body" :content="page?.body"/>
+    </Container>
+    <!--    <ContentRenderer v-if="home" :value="home" style="position: relative"/>-->
+    <!--    <div v-else>Home not found</div>-->
   </main>
 </template>

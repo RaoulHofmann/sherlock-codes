@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: {enabled: true},
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', './node_modules/@RaoulHofmann/sherlocks-sanity-library/dist/main.css'],
   site: {
     url: 'https://sherlock-codes.dev',
     name: 'The Case of the Messy Codebase: SOLVED'
