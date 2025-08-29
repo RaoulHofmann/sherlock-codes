@@ -34,5 +34,6 @@ useSeoMeta({
     <Container class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8 mb-3 flex justify-center flex-col">
       <SanityCustomContent v-if="page?.body" :content="page?.body"/>
     </Container>
+    <HelpDeskContact />
   </main>
 </template>
