@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     url: 'https://sherlock-codes.dev',
     name: 'The Case of the Messy Codebase: SOLVED'
   },
+  build: {
+    transpile: ['@RaoulHofmann/sherlocks-sanity-library']
+  },
   gtag: {
     tags: [
       'GTM-57FXD4GT',
@@ -18,7 +21,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
-      include: ['react-compiler-runtime', 'react', 'react-dom']
+      include: ['react-compiler-runtime', 'react', 'react-dom', '@sanity/image-url']
     }
   },
   image: {
@@ -28,7 +31,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/scripts',
     '@nuxt/image',
-    'shadcn-nuxt',
     '@nuxt/icon',
     'nuxt-gtag',
     '@nuxtjs/sitemap',
@@ -44,16 +46,5 @@ export default defineNuxtConfig({
     projectId: "ctarui6k",
     dataset: "production",
     visualEditing: false
-  },
-  shadcn: {
-    /**
-     * Prefix for all the imported component
-     */
-    prefix: '',
-    /**
-     * Directory that the component lives in.
-     * @default "./components/ui"
-     */
-    componentDir: '~/components/ui'
   }
 })
