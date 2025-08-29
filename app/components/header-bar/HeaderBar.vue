@@ -43,20 +43,20 @@ const toggleMobileMenu = () => {
         </div>
 
         <!-- Desktop Navigation -->
-<!--        <nav class="hidden md:flex items-center space-x-8">-->
+        <nav class="hidden md:flex items-center space-x-8">
 <!--          <NuxtLink-->
-<!--              to="#services"-->
+<!--              to="/pricing"-->
 <!--              class="text-muted-foreground hover:text-foreground transition-colors duration-200"-->
 <!--          >-->
-<!--            Services-->
+<!--            Pricing-->
 <!--          </NuxtLink>-->
-<!--          <NuxtLink-->
-<!--              to="#about-me"-->
-<!--              class="text-muted-foreground hover:text-foreground transition-colors duration-200"-->
-<!--          >-->
-<!--            About-->
-<!--          </NuxtLink>-->
-<!--        </nav>-->
+          <NuxtLink
+              to="/blog"
+              class="text-(--amber-warm)  hover:text-(--copper-rich) transition-colors duration-200"
+          >
+            Blog
+          </NuxtLink>
+        </nav>
 
         <div class="hidden md:flex items-center space-x-4">
           <NuxtLink
@@ -91,20 +91,20 @@ const toggleMobileMenu = () => {
       >
         <div v-if="mobileMenuOpen" class="md:hidden mt-2 pt-2">
           <nav class="flex flex-col space-y-4 pb-4">
-<!--            <NuxtLink-->
-<!--                to="#services"-->
-<!--                class="text-muted-foreground hover:text-foreground transition-colors duration-200"-->
-<!--                @click="mobileMenuOpen = false"-->
-<!--            >-->
-<!--              Services-->
-<!--            </NuxtLink>-->
-<!--            <NuxtLink-->
-<!--                to="#about-me"-->
-<!--                class="text-muted-foreground hover:text-foreground transition-colors duration-200"-->
-<!--                @click="mobileMenuOpen = false"-->
-<!--            >-->
-<!--              About-->
-<!--            </NuxtLink>-->
+<!--            <NuxtLink
+                to="/pricing"
+                class="text-muted-foreground hover:text-foreground transition-colors duration-200"
+                @click="mobileMenuOpen = false"
+            >
+              Pricing
+            </NuxtLink>-->
+            <NuxtLink
+                to="/blog"
+                class="text-(--amber-warm)  hover:text-(--copper-rich) transition-colors duration-200"
+                @click="mobileMenuOpen = false"
+            >
+              Blog
+            </NuxtLink>
             <NuxtLink
                 :to="{ hash: '#contact-me' }"
                 class="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors duration-200 text-center"

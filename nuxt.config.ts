@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: {enabled: true},
-  css: ['~/assets/css/tailwind.css', './node_modules/@RaoulHofmann/sherlocks-sanity-library/dist/main.css'],
+  css: ['~/assets/css/tailwind.css'],
   site: {
     url: 'https://sherlock-codes.dev',
     name: 'The Case of the Messy Codebase: SOLVED'
@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     dir: 'assets/images'
   },
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/scripts',
     '@nuxt/image',
@@ -38,28 +37,13 @@ export default defineNuxtConfig({
     '@nuxtjs/sanity'
   ],
   components: {
-    dirs: ['~/components', 'node_modules/@RaoulHofmann/sherlocks-sanity-library']
+    global: true,
+    dirs: ['~/components']
   },
   sanity: {
     projectId: "ctarui6k",
     dataset: "production",
     visualEditing: false
-  },
-  content: {
-    build: {
-      markdown: {
-        highlight: {
-          theme: 'github-light-default',
-          langs: ['php']
-        }
-      }
-    },
-    renderer: {
-      anchorLinks: {
-        h3: false,
-        h4: false
-      }
-    }
   },
   shadcn: {
     /**

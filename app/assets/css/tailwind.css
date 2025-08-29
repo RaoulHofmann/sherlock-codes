@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@source "../../../node_modules/@RaoulHofmann/sherlocks-sanity-library/**/*.{vue,js,ts,jsx,tsx}";
+@source "../../../node_modules/@RaoulHofmann/sherlocks-sanity-library/dist/**/*.{vue,js,ts,jsx,tsx}";
 
 @tailwind utilities;
 

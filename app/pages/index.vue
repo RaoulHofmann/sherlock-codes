@@ -2,8 +2,6 @@
 import type {SanityDocument} from "@sanity/client";
 import {SanityCustomContent} from "@RaoulHofmann/sherlocks-sanity-library";
 
-//const {data: home} = await useAsyncData(() => queryCollection('content').path('/').first())
-
 const PAGE_QUERY = groq`*[
   _type == "basicPage"
   && slug.current == "/"][0]{
@@ -36,7 +34,5 @@ useSeoMeta({
     <Container class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8 mb-3 flex justify-center flex-col">
       <SanityCustomContent v-if="page?.body" :content="page?.body"/>
     </Container>
-    <!--    <ContentRenderer v-if="home" :value="home" style="position: relative"/>-->
-    <!--    <div v-else>Home not found</div>-->
   </main>
 </template>
